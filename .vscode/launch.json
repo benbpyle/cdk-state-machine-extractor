@@ -5,12 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Program with Help",
-            "type": "go",
+            "type": "node",
             "request": "launch",
-            "mode": "auto",
-            "args": ["-file-name", "/Users/ben/Development/github/step-functions-local/cdk.out/LocalTesting.template.json"],
-            "program": "${workspaceFolder}"
+            "name": "Build Project",
+            "program": "${workspaceFolder}/src/index.ts",
+            "preLaunchTask": "npm: build",
+            "sourceMaps": true,
+            "smartStep": true,
+            "internalConsoleOptions": "openOnSessionStart",
+            "outFiles": ["${workspaceFolder}/out/**/*.js"]
         }
     ]
 }

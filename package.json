@@ -1,0 +1,37 @@
+{
+    "name": "cdk-state-machine-extractor",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx tsc",
+        "test": "jest",
+        "watch-and-run": "tsc -w & nodemon -q -w dist dist/index.js -f /Users/ben/Development/github/step-functions-local/cdk.out/LocalTesting.template.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/benbpyle/cdk-state-machine-extractor.git"
+    },
+    "keywords": [
+        "CDK",
+        "State Machine",
+        "Extractor"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/benbpyle/cdk-state-machine-extractor/issues"
+    },
+    "homepage": "https://github.com/benbpyle/cdk-state-machine-extractor#readme",
+    "devDependencies": {
+        "@types/jest": "^29.5.0",
+        "@types/node": "^18.15.11",
+        "jest": "^29.5.0",
+        "nodemon": "^2.0.22",
+        "ts-jest": "^29.1.0",
+        "typescript": "^5.0.4"
+    },
+    "dependencies": {
+        "commander": "^10.0.0"
+    }
+}
