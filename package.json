@@ -1,12 +1,12 @@
 {
-    "name": "cdk-state-machine-extractor",
-    "version": "1.0.0",
+    "name": "cdk-asl-definition-extractor",
+    "version": "1.0.1",
     "description": "",
     "main": "index.js",
+    "bin": "./dist/index.js",
     "scripts": {
         "build": "npx tsc",
-        "test": "jest",
-        "watch-and-run": "tsc -w & nodemon -q -w dist dist/index.js -f /Users/ben/Development/github/step-functions-local/cdk.out/LocalTesting.template.json"
+        "test": "jest"
     },
     "repository": {
         "type": "git",
